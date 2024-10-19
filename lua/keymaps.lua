@@ -8,4 +8,12 @@ vim.keymap.set({ "n", "v", "i" }, "<Up>", "<Nop>", {})
 vim.keymap.set({ "n", "v", "i" }, "<Down>", "<Nop>", {})
 vim.keymap.set({ "n", "v", "i" }, "<Left>", "<Nop>", {})
 vim.keymap.set({ "n", "v", "i" }, "<Right>", "<Nop>", {})
+-- Code runner
 
+vim.keymap.set("n", "<leader>r", ":RunCode<CR>", { noremap = true, silent = false })
+vim.keymap.set("n", "<leader>rf", ":RunFile<CR>", { noremap = true, silent = false })
+vim.keymap.set("n", "<leader>rft", ":RunFile tab<CR>", { noremap = true, silent = false })
+vim.keymap.set("n", "<leader>rp", ":RunProject<CR>", { noremap = true, silent = false })
+vim.keymap.set("n", "<leader>rc", ":RunClose<CR>", { noremap = true, silent = false })
+vim.keymap.set("n", "<leader>crf", ":CRFiletype<CR>", { noremap = true, silent = false })
+vim.keymap.set("n", "<leader>crp", ":CRProjects<CR>", { noremap = true, silent = false })
