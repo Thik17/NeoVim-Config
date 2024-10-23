@@ -1,8 +1,9 @@
 vim.cmd("let mapleader = ' '")
 
-
 require("preferences")
 require("keymaps")
+
+vim.g.base46_cache = vim.fn.stdpath("data") .. "/base46_cache/"
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -11,7 +12,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	if vim.v.shell_error ~= 0 then
 		vim.api.nvim_echo({
 			{ "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-			{ out, "WarningMsg" },
+			{ out,                            "WarningMsg" },
 			{ "\nPress any key to exit..." },
 		}, true, {})
 		vim.fn.getchar()
@@ -29,4 +30,9 @@ require("lazy").setup({
 	},
 })
 
-vim.cmd("colorscheme catppuccin-mocha")
+dofile(vim.g.base46_cache .. "defaults")
+dofile(vim.g.base46_cache .. "syntax")
+dofile(vim.g.base46_cache .. "treesitter")
+dofile(vim.g.base46_cache .. "statusline")
+
+vim.cmd("colorscheme nvchad")
