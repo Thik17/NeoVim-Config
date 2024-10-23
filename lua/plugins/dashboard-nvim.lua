@@ -26,7 +26,7 @@ return {
 			-- List of directory paths, or functions that return paths
 			directories = {
 				'~/.config/nvim',
-				'~/.config/kitty',
+				'~/.config/alacritty',
 				'~/.config/hypr',
 				'~/Projects/mainProjects',
 				'~/Projects/shitass',
