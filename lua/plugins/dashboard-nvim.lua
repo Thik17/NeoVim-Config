@@ -4,34 +4,26 @@ return {
 	config = function()
 		require("dashboard").setup({
 			-- Dashboard header
-			header =
-			{
-			      [[				        ,--.       ,----,                        ]],
-				[[                ,---,.       ,--.'|     .'   .`|  ,---,        ,---,   ]],
-				[[       ,---.  ,'  .' |   ,--,:  : |  .'   .'   ; '  .' \     ,`--.' |  ]],
-				[[      /__./|,---.'   |,`--.'`|  ' :,---, '    .'/  ;    '.   |   :  :  ]],
-				[[ ,---.;  ; ||   |   .'|   :  :  | ||   :     ./:  :       \  :   |  '  ]],
-				[[/___/ \  | |:   :  |-,:   |   \ | :;   | .'  / :  |   /\   \ |   :  |  ]],
-				[[\   ;  \ ' |:   |  ;/||   : '  '; |`---' /  ;  |  :  ' ;.   :'   '  ;  ]],
-				[[ \   \  \: ||   :   .''   ' ;.    ;  /  ;  /   |  |  ;/  \   \   |  |  ]],
-				[[  ;   \  ' .|   |  |-,|   | | \   | ;  /  /--, '  :  | \  \ ,'   :  ;  ]],
-				[[   \   \   ''   :  ;/|'   : |  ; .'/  /  / .`| |  |  '  '--' |   |  '  ]],
-				[[    \   `  ;|   |    \|   | '`--'./__;       : |  :  :       '   :  |  ]],
-				[[     :   \ ||   :   .''   : |    |   :     .'  |  | ,'       ;   |.'   ]],
-				[[      '---" |   | ,'  ;   |.'    ;   |  .'     `--''         '---'     ]],
-				[[            `----'    '---'      `---'                                 ]],
+			header = {
+				[[                                  __                ]],
+				[[     ___     ___    ___   __  __ /\_\    ___ ___    ]],
+				[[    / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],
+				[[   /\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ ]],
+				[[   \ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
+				[[    \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
 			},
+
 			-- Format to display date in
-			date_format = '%S:%M:%H %Y-%m-%d',
+			date_format = "%S:%M:%H %Y-%m-%d",
 			-- List of directory paths, or functions that return paths
 			directories = {
-				'~/.config/nvim',
-				'~/.config/alacritty',
-				'~/.config/hypr',
-				'~/Projects/mainProjects',
-				'~/Projects/shitass',
-				'~/Projects/learningGit',
-				'~/Project/sideQuests',
+				"~/.config/nvim",
+				"~/.config/alacritty",
+				"~/.config/hypr",
+				"~/Projects/mainProjects",
+				"~/Projects/shitass",
+				"~/Projects/learningGit",
+				"~/Project/sideQuests",
 			},
 			-- Sections to add at bottom, these can be string references to
 			-- functions in sections.lua, custom strings, or custom functions
