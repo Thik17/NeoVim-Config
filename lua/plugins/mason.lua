@@ -11,6 +11,9 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
+        "pyright",
+        "ts_ls",
+        "clangd",
         -- add more arguments for adding more language servers
       },
     },
