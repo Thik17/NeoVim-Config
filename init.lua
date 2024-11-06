@@ -35,4 +35,4 @@ dofile(vim.g.base46_cache .. "syntax")
 dofile(vim.g.base46_cache .. "treesitter")
 dofile(vim.g.base46_cache .. "statusline")
 
-vim.cmd("colorscheme nvchad")
+vim.cmd("colorscheme catppuccin")
